@@ -24,7 +24,7 @@ session = cnx.session()
 my_dataframe = session.table('smoothies.public.fruit_options').select(col("fruit_name"))
 #st.dataframe(data=my_dataframe, use_container_width=True)
 
-pd_df = mydataframe.to_pandas()
+pd_df = my_dataframe.to_pandas()
 # st.dataframe(pd_df)
 
 ingredients_list = st.multiselect(
